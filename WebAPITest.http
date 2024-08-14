@@ -4,3 +4,38 @@ GET {{WebAPITest_HostAddress}}/weatherforecast/
 Accept: application/json
 
 ###
+
+GET {{WebAPITest_HostAddress}}/api/Courses
+Accept: application/json
+
+###
+
+GET {{WebAPITest_HostAddress}}/api/Courses/14
+Accept: application/json
+
+###
+
+PUT {{WebAPITest_HostAddress}}/api/Courses/1
+Content-Type: application/json
+Accept: application/json
+
+{
+    "courseId": 1,
+    "title": "Entity Framework 8 開發實戰",
+    "credits": 4
+}
+
+###
+POST {{WebAPITest_HostAddress}}/api/Courses
+Content-Type: application/json
+
+{
+    "title": "GitHub copilot 實戰",
+    "credits": 4
+}
+
+###
+
+DELETE {{WebAPITest_HostAddress}}/api/Courses/14
+
+###
